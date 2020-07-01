@@ -1,0 +1,25 @@
+{
+    "name": "CurConfig",
+    "fields": [
+        {
+            "fieldName": "currencyImportUrl",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "currencyImportTime",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20200303061900",
+    "entityTableName": "cur_config",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "derincurrency",
+    "applications": "*",
+    "microserviceName": "derincurrency"
+}

@@ -1,0 +1,45 @@
+entity CurCurrencyDate {
+    currencyDate LocalDate,
+    sourceUnitValue Integer,
+    resultUnitValue Integer,
+    buyingRate Double,
+    sellingRate Double,
+    effectiveBuyingRate Double,
+    effectiveSellingRate Double,
+    isService Boolean,
+}
+
+entity CurCurrencyMatrix {
+     sourceUnitValue Integer,
+     resultUnitValue Integer,
+    buyingRate Double,
+    sellingRate Double,
+    effectiveBuyingRate Double,
+    effectiveSellingRate Double,
+    lastCurrencyDate LocalDate,
+
+}
+
+entity CurCurrencies {
+    currencyCode String required unique,
+    currencyName String required unique,
+    currencySymbol String,
+}
+
+entity CurConfig{
+    currencyImportUrl String,
+    currencyImportTime  String
+}
+
+relationship ManyToOne {
+	CurCurrencyDate{sourceCurrency} to CurCurrencies,
+    CurCurrencyDate{resultCurrency} to CurCurrencies,
+    CurCurrencyMatrix{sourceCurrency} to CurCurrencies,
+    CurCurrencyMatrix{resultCurrency} to CurCurrencies,
+}
+
+dto * with mapstruct
+filter CurCurrencyDate
+// Set pagination options
+paginate CurCurrencyDate with pagination
+service all with serviceImpl

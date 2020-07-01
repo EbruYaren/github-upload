@@ -1,0 +1,29 @@
+{
+    "name": "CurCurrencies",
+    "fields": [
+        {
+            "fieldName": "currencyCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "currencyName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "currencySymbol",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20200217083400",
+    "entityTableName": "cur_currencies",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "derincurrency",
+    "applications": "*",
+    "microserviceName": "derincurrency"
+}

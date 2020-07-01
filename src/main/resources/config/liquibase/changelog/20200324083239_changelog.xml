@@ -1,0 +1,15 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <changeSet author="msk (generated)" id="1585038789724-1">
+        <addForeignKeyConstraint baseColumnNames="source_currency_id" baseTableName="cur_currency_date" onDelete="CASCADE" constraintName="FK5a2gqxw9iskf9b285tnan7r56" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="cur_currencies" validate="true"/>
+    </changeSet>
+    <changeSet author="msk (generated)" id="1585038789724-2">
+        <addForeignKeyConstraint baseColumnNames="result_currency_id" baseTableName="cur_currency_date" onDelete="CASCADE" constraintName="FKsp1nhkrlitcusa3cdcd4kcyco" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="cur_currencies" validate="true"/>
+    </changeSet>
+    <changeSet author="msk (generated)" id="1585038789724-3">
+        <addForeignKeyConstraint baseColumnNames="result_currency_id" baseTableName="cur_currency_matrix" onDelete="CASCADE" constraintName="FKt3c03rsrx4erd6dwnwct5uygh" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="cur_currencies" validate="true"/>
+    </changeSet>
+    <changeSet author="msk (generated)" id="1585038789724-4">
+        <addForeignKeyConstraint baseColumnNames="source_currency_id" baseTableName="cur_currency_matrix" onDelete="CASCADE" constraintName="FKtlq4mm7biiti07nw8so6ivkk4" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="cur_currencies" validate="true"/>
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,64 @@
+{
+    "name": "CurCurrencyDate",
+    "fields": [
+        {
+            "fieldName": "currencyDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "sourceUnitValue",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "resultUnitValue",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "buyingRate",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "sellingRate",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "effectiveBuyingRate",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "effectiveSellingRate",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "isService",
+            "fieldType": "Boolean"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "curCurrencies",
+            "otherEntityRelationshipName": "curCurrencyDate",
+            "relationshipName": "sourceCurrency",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "curCurrencies",
+            "otherEntityRelationshipName": "curCurrencyDate",
+            "relationshipName": "resultCurrency",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200217083200",
+    "entityTableName": "cur_currency_date",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "derincurrency",
+    "applications": "*",
+    "microserviceName": "derincurrency"
+}

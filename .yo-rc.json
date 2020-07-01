@@ -1,0 +1,42 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.app.derin.currency",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "6.7.1",
+    "applicationType": "microservice",
+    "baseName": "derincurrency",
+    "packageName": "com.app.derin.currency",
+    "packageFolder": "com/app/derin/currency",
+    "serverPort": "8082",
+    "authenticationType": "uaa",
+    "uaaBaseName": "derinuaa",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": "kafka",
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": true,
+    "jwtSecretKey": "MDBkYzBhNmMyODY1YjlkYjRiN2NiNjU4NGUwZThlYTljYjc1MzJjZjM3YTU1MTM2ODExY2E3YjQ4YTJjMzQwNDIzN2RhNDU4NjYzZGE1OTIzNzFhMDI2MDFmZmJmZGU5ZDJmNzg2NmM4MzBmZWFjN2I1YTc5MzhkODE0OWY0ODQ=",
+    "embeddableLaunchScript": false,
+    "creationTimestamp": 1581926375691,
+    "testFrameworks": ["cucumber"],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "clientPackageManager": "npm",
+    "nativeLanguage": "en",
+    "languages": ["en", "tr"],
+    "blueprints": [],
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}

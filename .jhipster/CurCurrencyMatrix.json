@@ -1,0 +1,60 @@
+{
+    "name": "CurCurrencyMatrix",
+    "fields": [
+        {
+            "fieldName": "sourceUnitValue",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "resultUnitValue",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "buyingRate",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "sellingRate",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "effectiveBuyingRate",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "effectiveSellingRate",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "lastCurrencyDate",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "curCurrencies",
+            "otherEntityRelationshipName": "curCurrencyMatrix",
+            "relationshipName": "sourceCurrency",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "curCurrencies",
+            "otherEntityRelationshipName": "curCurrencyMatrix",
+            "relationshipName": "resultCurrency",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200217083300",
+    "entityTableName": "cur_currency_matrix",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "derincurrency",
+    "applications": "*",
+    "microserviceName": "derincurrency"
+}
